@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>SEDONA</title>
+  </head>
+  <body>
+	<nav>
+		<a href=”inner.html”> <b>Информация</b></a>
+		<a href=”inner.html”> <b>Фото и видео</b></a>
+		<a href=”inner.html”> <b>Карта штата</b></a>
+		<a href=”inner.html”> <b>Гостиницы</b></a>
+</nav>
+<main>
+  <h1>SEDONA</h1>
+<h2> Because the Grand Canyon sucks</h2>
+<p><b> Седона – небольшой городок в Аризоне, заслуживающий большего!</b></p>
+<p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Коньон!</p>
+<p><b>Заинтересовались?</b></p>
+<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
+</main>
+<footer>
+<section> 
+<h3>#visitsedona <br> tel: +7(495) 666-01-61</h3>
+</section>
+<section>
+<h3> 
+<img src=”vk.png”>
+<img src=”fb.png”>
+<img src=”youtube.png”>
+</h3>
+</section>
+<section>
+<h3> Website by HTML academy </h3>
+</section>
+</footer>
+</body>
+</html>
