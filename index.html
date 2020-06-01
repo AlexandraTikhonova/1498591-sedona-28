@@ -52,19 +52,19 @@
   <fieldset>
     <legend for="first">Поиск гостиницы в Седоне</legend>
       <label for="first">Дата заезда:</label>
-     <input type="date" name="search hotel" id="first" pattern="" required>
+     <input type="date" name="search hotel" id="first" pattern="" required tabindex="1">
       <br>
       <br>
       <label for="second">Дата выезда:</label>
-     <input type="date" name="search hotel" id="second" pattern="" required>
+     <input type="date" name="search hotel" id="second" pattern="" required tabindex="2">
      <br>
       <br>
      <label for="adult">Взрослые:</label>
-     <input type="number" min="1" max="10">
+     <input type="number" min="1" max="10" tabindex="3">
       <label for="child">Дети:</label>
-      <input type="number" min="1" max="10">
+      <input type="number" min="1" max="10" tabindex="4">
   </fieldset>
-    <button type="submit">Найти</button>
+    <button type="submit" tabindex="5">Найти</button>
     <!-- или так сделать бегунок у взрослых и детей?
     <input type="range" name="adult" id="adult" min="1" max="10"> -->
 </form>
