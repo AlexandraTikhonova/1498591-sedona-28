@@ -19,7 +19,8 @@
   </header>
 <main>
   <section class="Sedona">
-  <img src="img/intro-welcome.svg" width="456.65px" height="350.88px"> 
+    <img src="img/backcorrectyeasy.jpg" width="1200px" height="509px">
+    <img src="img/intro-welcome.svg" width="456.65px" height="350.88px"> 
     <h2><b>Седона – небольшой городок в Аризоне, заслуживающий большего!</b></h2>
     <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Коньон!</p>
   </section>
@@ -47,5 +48,25 @@
       <a href=”https://htmlacademy.ru/intensive/htmlcss”><img src="img/logo-htmlacademy.svg" width="197px" height="41px" alt="Website by HTML academy"></a>
   </section>
 </footer>
+<form action="index.html" method="post">
+  <fieldset>
+    <legend for="first">Поиск гостиницы в Седоне</legend>
+      <label for="first">Дата заезда:</label>
+     <input type="date" name="search hotel" id="first" pattern="" required>
+      <br>
+      <br>
+      <label for="second">Дата выезда:</label>
+     <input type="date" name="search hotel" id="second" pattern="" required>
+     <br>
+      <br>
+     <label for="adult">Взрослые:</label>
+     <input type="number" min="1" max="10">
+      <label for="child">Дети:</label>
+      <input type="number" min="1" max="10">
+  </fieldset>
+    <button type="submit">Найти</button>
+    <!-- или так сделать бегунок у взрослых и детей?
+    <input type="range" name="adult" id="adult" min="1" max="10"> -->
+</form>
 </body>
 </html>
