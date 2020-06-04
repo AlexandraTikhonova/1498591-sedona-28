@@ -8,19 +8,19 @@
 <body>
   <header>
     <nav class="site-navigation">
-        <ul>
-          <li><a href="index.html">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li><a class="main-header-logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип сайта городка Седона"></a></li>
-          <li><a href="">Карта штата</a></li>   
-          <li><a href="catalog.html">Гостиницы</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Информация</a></li>
+        <li><a href="">Фото и видео</a></li>
+        <li><a class="main-header-logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип сайта городка Седона"></a></li>
+        <li><a href="">Карта штата</a></li>   
+        <li><a href="catalog.html">Гостиницы</a></li>
+      </ul>
     </nav>
   </header>
 <main>
   <section class="Sedona">
-    <img src="img/backcorrectyeasy.jpg" width="1200px" height="509px">
-    <img src="img/intro-welcome.svg" width="456.65px" height="350.88px"> 
+    <img src="img/backcorrectyeasy.jpg" width="1200" height="509">
+    <img src="img/intro-welcome.svg" width="456" height="350"> 
     <h2><b>Седона – небольшой городок в Аризоне, заслуживающий большего!</b></h2>
     <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Коньон!</p>
   </section>
@@ -38,35 +38,35 @@
     <a href=""><br>tel: +7(495) 666-01-61</a>
   </section>
   <section  class="second-column">
-      <ul>
-          <li><a href="https://via.placeholder.com/150x100"><img src="img/twitter2.svg" width="46px" height="48px" alt="twitter"></a></li>
-          <li><a href="https://via.placeholder.com/150x100"><img src="img/fb.svg"width="46px" height="48px" alt="fb"></a></li>
-          <li><a href="https://via.placeholder.com/150x100"><img src="img/youtb.svg" width="46px" height="48px" alt="Youtube"></a></li>
-      </ul>
+    <ul>
+      <li><a href="https://via.placeholder.com/150x100"><img src="img/twitter2.svg" width="46" height="48" alt="twitter"></a></li>
+      <li><a href="https://via.placeholder.com/150x100"><img src="img/fb.svg"width="46" height="48" alt="fb"></a></li>
+      <li><a href="https://via.placeholder.com/150x100"><img src="img/youtb.svg" width="46" height="48" alt="Youtube"></a></li>
+    </ul>
   </section>
   <section class="third-column">
-      <a href=”https://htmlacademy.ru/intensive/htmlcss”><img src="img/logo-htmlacademy.svg" width="197px" height="41px" alt="Website by HTML academy"></a>
+    <a href=”https://htmlacademy.ru/intensive/htmlcss”><img src="img/logo-htmlacademy.svg" width="197" height="41" alt="Website by HTML academy"></a>
   </section>
 </footer>
 <form action="index.html" method="post">
-  <fieldset>
-    <legend for="first">Поиск гостиницы в Седоне</legend>
-      <label for="first">Дата заезда:</label>
-     <input type="date" name="search hotel" id="first" pattern="" required tabindex="1">
-      <br>
-      <br>
-      <label for="second">Дата выезда:</label>
-     <input type="date" name="search hotel" id="second" pattern="" required tabindex="2">
-     <br>
-     <br>
-     <label for="adult">Взрослые:</label>
-     <input type="number" min="1" max="10" tabindex="3">
-      <label for="child">Дети:</label>
-      <input type="number" min="1" max="10" tabindex="4">
-  </fieldset>
-    <button type="submit" tabindex="5">Найти</button>
-    <!-- или так сделать бегунок у взрослых и детей?
-    <input type="range" name="adult" id="adult" min="1" max="10"> -->
+  <h2>Поиск гостиницы в Седоне</h2>
+  <div class="form-row">
+    <label for="first">Дата заезда:</label>
+    <input type="date" name="search hotel" id="first" pattern="" required>
+  </div>  
+  <div>
+    <label for="second">Дата выезда:</label>
+    <input type="date" name="search hotel" id="second" pattern="" required>
+  </div>
+  <div>
+    <label for="adult">Взрослые:</label>
+    <input type="number" min="1" max="10">
+  </div>
+  <div>
+    <label for="child">Дети:</label> <!--ширина-->
+    <input type="number" min="1" max="10" tabindex="4"> <!--занимал все место -->
+  </div>
+  <button type="submit" tabindex="5">Найти</button>
 </form>
 </body>
 </html>
