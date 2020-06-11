@@ -8,7 +8,8 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body> 
+  <div class="wrapper">
   <header>
     <nav class="site-navigation">
       <ul>
@@ -21,34 +22,52 @@
     </nav>
   </header>
 <main>
+  <h1 class="visually-hidden">Блок первый</h1>
+  <section class="intro">
+    <h2 class="visually-hidden">Sedona</h2>
+    <div class="photo2">
+      <img src="img/welcome1.png" width="457" height="351" alt="Welcome to the gorgeous Sedona 'because the Grand Canyon sucks!'">
+    </div>
+  </section>
   <section class="sedona">
-    <img src="img/Group 9.jpg" width="1202" height="725" alt="фон">
+     <!--visually hidden скрывать-->
     <!--<img src="img/backcorrectyeasy.jpg" width="1200" height="509" alt="фон"> -->
     <!-- <img src="img/intro-welcome.svg" width="456" height="350" alt="welcome"> -->
-    <h2><b>Седона – небольшой городок в Аризоне, заслуживающий большего!</b></h2>
+    <h2>Седона – небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Коньон!</p>
   </section>
+  <h1 class="visually-hidden">Блок второй</h1>
   <section class="call-to-action">
+    <h2 class="visually-hidden">Призыв к действию</h2>
     <p><strong>Заинтересовались?</strong></p>
     <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
   </section>
+  <h1 class="visually-hidden">Блок третий</h1>
   <section class="map">
+    <h2 class="visually-hidden">Карта</h2>
     <img src="img/map.jpg" alt="карта" >
   </section>
 </main>
 <footer>
+  <h1 class="visually-hidden">Футер</h1>
   <section  class="first-column">
+    <h2 class="visually-hidden">Как с нами связаться</h2>
     <a href="">#visitsedona</a>
-    <a href=""><br>tel: +7(495) 666-01-61</a>
+    <a href="tel:+74956660161">tel: +7(495) 666-01-61</a>
   </section>
+  <h1 class="visually-hidden">Футер</h1>
   <section  class="second-column">
-    <ul>
-      <li><a href="https://via.placeholder.com/150x100"><img src="img/twitter2.svg" width="46" height="48" alt="twitter"></a></li>
-      <li><a href="https://via.placeholder.com/150x100"><img src="img/fb.svg" width="46" height="48" alt="fb"></a></li>
-      <li><a href="https://via.placeholder.com/150x100"><img src="img/youtb.svg" width="46" height="48" alt="Youtube"></a></li>
+    <h2 class="visually-hidden">Мы в соц.сетях</h2>
+    <ul class="social-list">
+      <li><a class="social-list-link" href="https://via.placeholder.com/150x100"><img src="img/twitter.svg" alt="twitter"></a></li>
+      <li><a class="social-list-link" href="https://via.placeholder.com/150x100"><img src="img/facebook.svg" alt="fb"></a></li>
+      <li><a class="social-list-link" href="https://via.placeholder.com/150x100"><img src="img/youtube.svg" alt="Youtube"></a></li>
     </ul>
   </section>
+  <h1 class="visually-hidden">Футер</h1>
   <section class="third-column">
+    <h2 class="visually-hidden">Сайт сделан с помощью</h2>
+    <p>Website by HTML academy</p>
     <a href=”https://htmlacademy.ru/intensive/htmlcss”><img src="img/logo-htmlacademy.svg" width="197" height="41" alt="Website by HTML academy"></a>
   </section>
 </footer>
@@ -56,11 +75,11 @@
   <h2>Поиск гостиницы в Седоне</h2>
   <div class="form-row">
     <label for="first">Дата заезда:</label>
-    <input class="one" type="date" name="search hotel" id="first" required>
+    <input class="one" type="text" name="search hotel" id="first" required>
   </div>  
   <div>
     <label for="second">Дата выезда:</label>
-    <input class="one" type="date" name="search hotel" id="second" required>
+    <input class="one" type="text" name="search hotel" id="second" required>
   </div>
   <div>
     <label>Взрослые:</label>
@@ -70,7 +89,8 @@
     <label>Дети:</label> <!--ширина-->
     <input type="number" min="1" max="10"> <!--занимал все место -->
   </div>
-  <button type="submit">Найти</button>
+  <button type="submit" class="button">Найти</button>
 </form>
+</div>
 </body>
 </html>
