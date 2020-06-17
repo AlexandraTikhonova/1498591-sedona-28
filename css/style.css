@@ -496,6 +496,9 @@ footer a:active {
 
 
 .true-city h1,
+.true-city h2,
+.true-city h3,
+.true-city h4,
 .true-city p {
     color: var(--basic-white);
     background-color: var(--fon);
@@ -514,7 +517,10 @@ footer a:active {
     max-width: 1200px;
 }
 
-.true-city h1 {
+.true-city h1,
+.true-city h2,
+.true-city h3,
+.true-city h4, {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
@@ -590,6 +596,26 @@ footer a:active {
 
 }
 
+.description1 h1,
+.description1 h2,
+.description1 h3,
+.description1 h4 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.road h5 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.tourist h6 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+}
 
 .about-bridge {
     background-color: var(--basic-dark);
