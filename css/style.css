@@ -33,11 +33,27 @@
     --hoverbotton: #669EC0;
     --focusbutton: #5496BD;
     --active-color: rgba(255, 255, 255, 0.3);
+    --fon: #81B3D2;
+}
+
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
 
 body {
+   display: block;
+   box-sizing: border-box;
    min-width: 1200px;
-   margin: 0;
+   padding: 0 40px;
+   width: auto;
+   margin: 0 40px;
    padding: 0;
    font-family: PT Sans, Arial, sans-serif;
    font-size: 14px;
@@ -57,11 +73,19 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.container {
+    width: 1200px;
+    height: 56px;
+}
+
+
 a {
     text-decoration: none;
     font-weight: bold;
     color:#000000;
 }
+
 
 img {
     height: auto;
@@ -102,14 +126,55 @@ form {
 }
 
 .site-navigation {
+    width: 100%;
+    overflow: hidden;
+}
+.site-navigation ul {
     font-size: 14px;
     line-height: 26px;
     list-style: none; 
-    
+    display: flex;
+    max-width: 1200px;
+    text-align: center;
+    align-items: center;
+    flex-grow: 1;
+    color: var(--basic-white);
+    background-color: transparent;
+    margin-top: 0px;
+    float: left;
+}
+
+.site-navigation .box1 {
+    margin: 15px 0px 15px 32px;
+    padding-top: 0;
+}
+
+.site-navigation .box2 {
+    margin: 15px 133px 15px 134px;
+}
+
+.site-navigation .main-header-logo {
+    text-align: center;
+}
+
+.site-navigation .box3 {
+    margin-top: 15px;
+    margin-right: 147px;
+}
+
+
+.main-header-logo {
+    width: 138px;
+    height: 70px;
+    text-align: center;
 }
 
 .site-navigation ul {
     list-style: none;
+}
+
+.site-navigation.main-header-logo {
+    margin-top: 0px;
 }
 
 .button {
@@ -173,7 +238,11 @@ input, label {
     text-align: left;
     list-style: none; 
     font-size: 21px;
+    display: inline;
+    white-space:pre; 
 } 
+
+
 
 .second-column {
     text-align: center;
@@ -254,13 +323,16 @@ h3 {
 
 .sedona h2 {
     font-weight: bold;
+    margin-top: 42px;
 }
 .sedona p {
     color: #333333;
+    
 }
 
 .img .photo2 {
     position: absolute; 
+    height: 509px;
 }
 
 .site-navigation a:hover {
@@ -364,8 +436,47 @@ input:active{
     opacity: 0.3;
 }
 
+.main-footer .containerr {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
 
 
+
+
+.second-column {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    align-content: center;
+}
+
+.second-column ul {
+    list-style: none;
+}
+
+
+.third-column {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    justify-self: end;
+    text-align: center;
+    max-width: 400px;
+}
+
+.third-column p {
+    margin-right: 8px;
+}
+
+.social-list {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
 
 footer a:hover,
 footer a:active {
@@ -382,3 +493,146 @@ footer a:active {
     padding: 0;
     border: 0;
   }
+
+
+.true-city h1,
+.true-city p {
+    color: var(--basic-white);
+    background-color: var(--fon);
+
+}
+
+.imge img {
+    width: 800px;
+}
+
+
+.true-city {
+    display: flex;
+    align-items: center;
+    text-align: center;  
+    max-width: 1200px;
+}
+
+.true-city h1 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.true-city p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+}
+
+.true-city .text {
+    background-color: var(--fon);
+    display: block;
+    height: 246px;
+    color: var(--basic-white);
+
+}
+
+.imgg img {
+    max-width: 800px;
+    height: 256px;
+}
+
+
+.details ul {
+    background-color: var(--basic-white);
+    list-style: none; 
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    list-style: none; 
+    align-items: center;
+    text-transform: uppercase;
+}
+
+
+.bridge-devil {
+    display: flex;
+    align-items: center;
+    text-align: center;  
+    max-width: 1200px;
+}
+
+
+.bridge-devil h1,
+.bridge-devil p {
+    color: var(--basic-white);
+    background-color: var(--fon);
+}
+
+.bridge-devil h1 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.bridge-devil p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.bridge-devil .text {
+    background-color: var(--fon);
+    display: block;
+    height: 256px;
+    color: var(--basic-white);
+
+}
+
+
+.about-bridge {
+    background-color: var(--basic-dark);
+    list-style: none; 
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    list-style: none; 
+    align-items: center;
+    text-transform: uppercase;
+    height: 256px;
+    margin-top: 0;
+}
+
+.description-bridge h1 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.description-bridge p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.product-list {
+    height: 540px;
+}
+
+.product-list li {
+    list-style: none; 
+}
+
+.product-list li {
+    display: flex;
+    border: solid 1px #E5E5E5;
+}
+
+.description p {
+    display: flex;
+}
+
+.rating {
+
+}
