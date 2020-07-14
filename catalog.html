@@ -8,7 +8,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="page-body"> 
+<body class="page-body">
   <div class="wrapper">
   <header>
     <div class="container">
@@ -16,61 +16,142 @@
         <ul>
           <li><a class="box1" href="index.html">Информация</a></li>
           <li><a class="box2" href="">Фото и видео</a></li>
-          <li><a class="main-header-logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип сайта городка Седона"></a></li>
-          <li><a class="box3" href="">Карта штата</a></li>   
+          <li class="main-header-logo-wrapper"><a class="main-header-logo" href="index.html"><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип сайта городка Седона"></a></li>
+          <li><a class="box3" href="index.html #map">Карта штата</a></li>
           <li><a class="box4" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </div>
   </header>
 <main>
-  <section class="main-part"> 
+  <!--new-->
+  <section class="roll">
+    <!-- <img src="img/roll.jpg" alt=" фон"> -->
+    <div class="add">
+      <fieldset>
+        <legend class="nameof">ИНФРАСТРУКТУРА:</legend>
+        <p>
+          <input id="pool" class="checkbox" type="checkbox" name="ИНФРАСТРУКТУРА" value="Бассейн" checked>
+          <label for="pool" class="check">Бассейн</label>
+        </p>
+        <p>
+          <input class="checkbox" type="checkbox" name="ИНФРАСТРУКТУРА" value="ПАРКОВКА">
+          <label class="check">ПАРКОВКА</label>
+        </p>
+        <p>
+          <input class="checkbox" type="checkbox" name="ИНФРАСТРУКТУРА" value="WI-FI">
+          <label class="check">WI-FI</label>
+        </p>
+      </fieldset> <!-- сделать также с Жильем-->
+      <fieldset>
+        <legend class="nameof">Тип жилья:</legend>
+        <p>
+          <input class="checkbox" type="checkbox" name="Типжилья" value="Гостиница" checked>
+          <label class="check">Гостиница</label>
+        </p>
+        <p>
+          <input class="checkbox" type="checkbox" name="Типжилья" value="Мотель" checked>
+          <label class="check">Мотель</label>
+        </p>
+        <p>
+          <input class="checkbox" type="checkbox" name="Типжилья" value="Апартаменты" checked>
+          <label class="check">Апартаменты</label>
+        </p>
+      </fieldset>
+      <div class="fieldset-wrapper">
+        <ul class="price"> <!--fieldset-->
+          <li><span>Стоимость в сутки (Р):</span></li> <!--legend, лишки удалить-->
+          <li><input class="text" type="text">От 0</li>  <!--div два инпута в один див/ css на див дисплей флекс или инлайн блоки-->
+          <li><input class="text" type="text">До 3000</li>
+          <div class="range"> <!-- полупрозрачная полоска -->
+            <span class="sub-range"> <!-- непрозрачная полоска -->
+              <span class="left-slider">
+              <span class="visually-hidden">меньший ползунок цены</span> <!-- левый ползунок -->
+              </span>
+              <span class="right-slider">
+              <span class="visually-hidden">больший ползунок цены</span> <!-- правый ползунок -->
+              </span>
+            </span>
+          </div>
+        </ul>
+        <button type="submit" class="button-catalog">Показать</button>
+      </div>
+    </div>
+  </section>
+  <!--new-->
+  <section class="main-part">
+    <section>
+      <div class="search3">
+        <ul class="search3">
+          <li><span>Найдено: 3</span></li>
+          <li><span>Сортировка:</span></li>
+          <li><button class="button1" type="button">По цене</button></li> <!--остальные также-->
+          <li><input class="text" type="text">По типу</li>
+          <li><input class="text" type="text">По рейтингу</li>
+        </ul>
+      </div>
+    </section>
     <ul class="product-list">
+      <!--первая ли -->
       <li class="product">
-        <div class="image">
-          <a href="blank.html"> 
-          <img src="img/hotel1.jpg" alt="Фото гостиницы 1"></a>
-        </div>
-        <div class="description">
-          <h3>Amara resort & spa</h3>
-          <p>Гостиница</p>
-          <p>от 4000Р.</p>
-          <a class="more" href="">Подробнее</a>
-          <a class="book" href="">Забронировать</a>
+        <div class="product-content">
+          <div class="image">
+            <a href="blank.html">
+            <img src="img/hotel1.jpg" alt="Фото гостиницы 1"></a>
+          </div>
+          <div class="description">
+            <h3>Amara resort & spa</h3>
+            <div class="cataloghotel">
+              <p class="hotel">Гостиница</p>
+              <p class="pricehotel">от 4000Р.</p>
+            </div>
+            <a class="more" href="">Подробнее</a>
+            <a class="book" href="">Забронировать</a>
+          </div>
         </div>
         <div class="rating">
           <img src="img/4stars.svg" alt="4 звезды">
           <span>"рейтинг 8.5"</span>
         </div>
       </li>
+      <!--вторая ли -->
       <li class="product">
-        <div class="image">
-          <a href="blank.html"> 
-          <img src="img/motel.jpg" alt="Фото гостиницы 2"> </a>
-        </div>
-        <div class="description">
-          <h3>Desert quail inn</h3>
-          <p>Мотель</p>
-          <p>от 3000Р.</p>
+        <div class="product-content">
+          <div class="image">
+            <a href="blank.html">
+            <img src="img/motel.jpg" alt="Фото гостиницы 2"></a>
+          </div>
+          <div class="description">
+            <h3>Desert quail inn</h3>
+            <div class="cataloghotel">
+              <p class="hotel">Мотель</p>
+              <p class="pricehotel">от 3000Р.</p>
+            </div>
             <a class="more" href="">Подробнее</a>
             <a class="book" href="">Забронировать</a>
+          </div>
         </div>
         <div class="rating">
           <img src="img/3stars.svg" alt="3 звезды">
           <span>"рейтинг 8.9"</span>
         </div>
-      </li> 
+      </li>
+
       <li class="product">
-        <div class="image">
-          <a href="blank.html"> 
-          <img src="img/appartment.jpg" alt="Фото гостиницы 3"></a>
-        </div>
-        <div class="description">
-          <h3>Villas at poco diablo</h3>
-          <p>Апартаменты</p>
-          <p>от 2000Р.</p>
-          <a class="more" href="">Подробнее</a>
-          <a class="book" href="">Забронировать</a>
+        <div class="product-content">
+          <div class="image">
+            <a href="blank.html">
+            <img src="img/appartment.jpg" alt="Фото гостиницы 3"></a>
+          </div>
+          <div class="description">
+            <h3>Villas at poco diablo</h3>
+            <div class="cataloghotel">
+              <p class="hotel">Апартаменты</p>
+              <p class="pricehotel">от 2000Р.</p>
+            </div>
+            <a class="more" href="">Подробнее</a>
+            <a class="book" href="">Забронировать</a>
+          </div>
         </div>
         <div class="rating">
           <img src="img/2stars.svg" alt="2 звезды">
@@ -80,7 +161,7 @@
     </ul>
   </section>
 </main>
-<footer class="page-footer main-footer">
+<footer class="page-footer">
   <div class="containerr">
   <section  class="first-column">
     <h2 class="visually-hidden">Как с нами связаться</h2>
