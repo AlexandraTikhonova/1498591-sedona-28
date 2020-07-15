@@ -10,22 +10,23 @@
 </head>
 <body class="page-body">
   <div class="wrapper">
-  <header>
-    <div class="container">
-      <nav class="site-navigation">
-        <ul>
-          <li><a class="box1" href="index.html">Информация</a></li>
-          <li><a class="box2" href="">Фото и видео</a></li>
-          <li class="main-header-logo-wrapper"><a class="main-header-logo" href="index.html"><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип сайта городка Седона"></a></li>
-          <li><a class="box3" href="index.html #map">Карта штата</a></li>
-          <li><a class="box4" href="catalog.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </div>
+    <header>
+      <div class="container">
+        <div class="main-header-logo-wrapper"><a class="main-header-logo" href="index.html"><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип сайта городка Седона"></a></div>
+        <nav class="site-navigation">
+          <ul>
+            <li class="site-navigation-item"><a href="index.html">Информация</a></li>
+            <li class="site-navigation-item"><a href="">Фото и видео</a></li>
+            <li class="site-navigation-item text-right"><a href="#map">Карта штата</a></li>
+            <li class="site-navigation-item text-right"><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </div>
   </header>
 <main>
-  <!--new-->
-  <section class="roll">
+  <h1 class="visually-hidden">Каталог</h1>
+  <form class="roll">
+    <h2 class="visually-hidden">Фильтры</h2>
     <!-- <img src="img/roll.jpg" alt=" фон"> -->
     <div class="add">
       <fieldset>
@@ -35,62 +36,63 @@
           <label for="pool" class="check">Бассейн</label>
         </p>
         <p>
-          <input class="checkbox" type="checkbox" name="ИНФРАСТРУКТУРА" value="ПАРКОВКА">
-          <label class="check">ПАРКОВКА</label>
+          <input id="parking" class="checkbox" type="checkbox" name="ИНФРАСТРУКТУРА" value="ПАРКОВКА">
+          <label for="parking" class="check">ПАРКОВКА</label>
         </p>
         <p>
-          <input class="checkbox" type="checkbox" name="ИНФРАСТРУКТУРА" value="WI-FI">
-          <label class="check">WI-FI</label>
+          <input id="wifi" class="checkbox" type="checkbox" name="ИНФРАСТРУКТУРА" value="WI-FI">
+          <label for="wifi" class="check">WI-FI</label>
         </p>
       </fieldset> <!-- сделать также с Жильем-->
       <fieldset>
         <legend class="nameof">Тип жилья:</legend>
         <p>
-          <input class="checkbox" type="checkbox" name="Типжилья" value="Гостиница" checked>
-          <label class="check">Гостиница</label>
+          <input id="live" class="checkbox" type="checkbox" name="Типжилья" value="Гостиница" checked>
+          <label for="live" class="check">Гостиница</label>
         </p>
         <p>
-          <input class="checkbox" type="checkbox" name="Типжилья" value="Мотель" checked>
-          <label class="check">Мотель</label>
+          <input id="motel" class="checkbox" type="checkbox" name="Типжилья" value="Мотель" checked>
+          <label for="motel" class="check">Мотель</label>
         </p>
         <p>
-          <input class="checkbox" type="checkbox" name="Типжилья" value="Апартаменты" checked>
-          <label class="check">Апартаменты</label>
+          <input id="appart" class="checkbox" type="checkbox" name="Типжилья" value="Апартаменты" checked>
+          <label for="appart" class="check">Апартаменты</label>
         </p>
       </fieldset>
       <div class="fieldset-wrapper">
-        <ul class="price"> <!--fieldset-->
-          <li><span>Стоимость в сутки (Р):</span></li> <!--legend, лишки удалить-->
-          <li><input class="text" type="text">От 0</li>  <!--div два инпута в один див/ css на див дисплей флекс или инлайн блоки-->
-          <li><input class="text" type="text">До 3000</li>
-          <div class="range"> <!-- полупрозрачная полоска -->
-            <span class="sub-range"> <!-- непрозрачная полоска -->
-              <span class="left-slider">
-              <span class="visually-hidden">меньший ползунок цены</span> <!-- левый ползунок -->
-              </span>
-              <span class="right-slider">
-              <span class="visually-hidden">больший ползунок цены</span> <!-- правый ползунок -->
-              </span>
-            </span>
+        <fieldset class="price">
+          <legend class="coast">Стоимость в сутки (Р):</legend> <!--legend, лишки удалить-->
+          <div class="minmax">
+            <input class="text" type="text">От 0  <!--div два инпута в один див/ css на див дисплей флекс или инлайн блоки-->
+            <input class="text" type="text">До 3000
           </div>
-        </ul>
+        </fieldset>
+        <div class="range"> <!-- полупрозрачная полоска -->
+          <span class="sub-range"> <!-- непрозрачная полоска -->
+            <span class="left-slider">
+            <span class="visually-hidden">меньший ползунок цены</span> <!-- левый ползунок -->
+            </span>
+            <span class="right-slider">
+            <span class="visually-hidden">больший ползунок цены</span> <!-- правый ползунок -->
+            </span>
+          </span>
+        </div>
         <button type="submit" class="button-catalog">Показать</button>
       </div>
     </div>
-  </section>
+  </form>
   <!--new-->
   <section class="main-part">
-    <section>
-      <div class="search3">
-        <ul class="search3">
-          <li><span>Найдено: 3</span></li>
-          <li><span>Сортировка:</span></li>
-          <li><button class="button1" type="button">По цене</button></li> <!--остальные также-->
-          <li><input class="text" type="text">По типу</li>
-          <li><input class="text" type="text">По рейтингу</li>
-        </ul>
-      </div>
-    </section>
+    <h2 class="visually-hidden">Сортировка</h2>
+    <div class="search3">
+      <ul class="search3">
+        <li class="find"><span>Найдено:3</span></li>
+        <li><span>Сортировка:</span></li>
+        <li><button class="button1" type="button">По цене</button></li> <!--остальные также-->
+        <li><input class="text" type="text">По типу</li>
+        <li><input class="text" type="text">По рейтингу</li>
+      </ul>
+    </div>
     <ul class="product-list">
       <!--первая ли -->
       <li class="product">
@@ -136,7 +138,6 @@
           <span>"рейтинг 8.9"</span>
         </div>
       </li>
-
       <li class="product">
         <div class="product-content">
           <div class="image">
@@ -165,8 +166,8 @@
   <div class="containerr">
   <section  class="first-column">
     <h2 class="visually-hidden">Как с нами связаться</h2>
-    <p><a href="">#visitsedona</a></p>
-    <p><a href="tel:+74956660161">tel: +7(495) 666-01-61</a></p>
+    <p class="footer-text-one"><a href="">#visitsedona</a></p>
+    <p class="footer-text"><a href="tel:+74956660161">тел: +7(495) 666-01-61</a></p>
   </section>
   <section  class="second-column">
     <h2 class="visually-hidden">Мы в соц.сетях</h2>
@@ -179,9 +180,9 @@
   <section class="third-column">
     <h2 class="visually-hidden">Сайт сделан с помощью</h2>
     <p>Website by</p>
-    <a href=”https://htmlacademy.ru/intensive/htmlcss”><img src="img/logo-htmlacademy.svg" width="197" height="41" alt="Website by HTML academy"></a>
+    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="197" height="41" alt="Website by HTML academy"></a>
   </section>
-</div>
+  </div>
 </footer>
 </div>
 </body>

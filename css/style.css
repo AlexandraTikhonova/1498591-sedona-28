@@ -53,6 +53,7 @@
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
+    background-color: #F2F2F2;
 }
 
 body {
@@ -69,6 +70,7 @@ body {
    text-transform: uppercase;
    background-color: var(--basic-extra-dark, #888);
    color: #000000;
+
 }
 
 .wrapper {
@@ -76,6 +78,7 @@ body {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 
@@ -91,15 +94,28 @@ img {
 }
 
 
+p {
+    padding: 0;
+
+}
 p strong {
     font-size: 30px;
+    padding-top: 158px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 24px;
+}
+
+.call-to-action p {
+    margin: 0;
+    padding-top: 50px;
 }
 
 section {
     list-style: none;
 }
 
-form {
+.date-of-invite {
     max-width: 568px;
     /*
     max-height: 481px;
@@ -140,14 +156,29 @@ form {
 }
 
 .site-navigation-item {
-  width: calc(25% - 250px/4);
+  width: 100%;
   padding: 0;
   margin: 0;
   text-align: left;
   padding: 14px 10px;
-  
+  margin-left: 65px;
 }
 
+.site-navigation-item.text-right {
+    margin-left: 0;
+    margin-right: 63px;
+
+}
+
+.site-navigation-item.text-center {
+    margin: 0;
+    padding-left: -250px;
+}
+
+.site-navigation-item.text-right.map {
+    margin: 0;
+    padding-left: -100px;
+}
 
 .main-header-logo-wrapper {
   width: 138px;
@@ -227,6 +258,7 @@ input, label {
 .footer-text-one {
     margin: 0;
     padding-bottom: 9px;
+    text-align: center;
 }
 
 
@@ -261,6 +293,7 @@ input, label {
     padding: 3px 16px 3px 17px;
     margin-left: 29px;
     margin-right: 6px;
+    margin-bottom: 10px;
 }
 
 .book {
@@ -272,6 +305,7 @@ input, label {
     color: #FFFFFF;
     text-transform: uppercase;
     padding: 3px 17px 3px 16px;
+    margin-bottom: 10px;
 }
 
 .book a,
@@ -299,7 +333,6 @@ h3 {
     align-items: center;
     text-transform: uppercase;
     color: #333333;
-    padding-top: 7px;
 }
 
 .rating span {
@@ -317,6 +350,9 @@ h3 {
 }
 
 .sedona h2 {
+    font-family: PT Sans;
+    font-size: 21px;
+    line-height: 26px;
     height: 80px;
     font-weight: bold;
     margin-top: 42px;
@@ -359,9 +395,17 @@ h3 {
     text-align: right;
     text-transform: uppercase;
     color: #000000;
+    padding: 0;
+    margin-top: 49px;
+    margin-bottom: 45px;
 }
 
+.third-column img {
+    padding: 0;
+    margin-top: 39px;
+    margin-bottom: 41px;
 
+}
 
 .more:hover {
     background-color: #669EC0;
@@ -395,6 +439,8 @@ h3 {
     opacity: 0.3;
 }
 
+
+
 .popup-wrapper {
   position: relative;
 }
@@ -411,8 +457,8 @@ h3 {
 }
 
 .form-title {
-  width: 100%;
-  max-width: 568px;
+    width: 100%;
+    max-width: 568px;
     font-size: 21px;
     font-weight: bold;
     background-color: #766357;
@@ -427,7 +473,8 @@ h3 {
     padding-right: 125px;
     margin-bottom: 55px;
     margin: 0;
-
+    border: 0;
+    margin-top: 18px;
 }
 
 .form-title:hover {
@@ -462,6 +509,7 @@ input:active{
     margin: 0;
     padding: 0;
 }
+
 .social-list-link:hover {
     background-color: #669EC0;
 }
@@ -474,12 +522,10 @@ input:active{
     opacity: 0.3;
 }
 
-.main-footer .containerr {
+.page-footer .containerr {
     display: flex;
     justify-content: space-between;
 }
-
-
 
 
 .second-column {
@@ -503,10 +549,6 @@ input:active{
     justify-self: end;
     text-align: center;
     max-width: 400px;
-}
-
-.third-column p {
-    margin-right: 8px;
 }
 
 .social-list {
@@ -537,8 +579,12 @@ footer a:active {
 
 
 .imge img {
-    width: 800px;
+    display: block;
+    max-width: 800px;
+    max-height: 217px;
+    
 }
+
 
 
 .true-city {
@@ -546,6 +592,7 @@ footer a:active {
     align-items: center;
     text-align: center;
     max-width: 1200px;
+    background-color: var(--fon);
 }
 
 .true-city h1,
@@ -624,6 +671,7 @@ footer a:active {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
+    margin-bottom: 0;
 }
 
 .bridge-devil .text {
@@ -634,13 +682,16 @@ footer a:active {
 
 }
 
-.description1 h1,
-.description1 h2,
-.description1 h3,
-.description1 h4 {
+.description1 h2{
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
+}
+
+h2 {
+    padding: 0;
+    margin-top: 28px;
+
 }
 
 .road h5 {
@@ -692,9 +743,10 @@ footer a:active {
     border: solid 1px #E5E5E5;
 }
 
-.description p {
-    display: flex;
+.product-list {
+    margin: 0;
 }
+
 
 .roll {
     position: relative;
@@ -722,8 +774,8 @@ footer a:active {
     background-size: cover;
     background-position: 50% 50%;
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     font-size: 16px;
     line-height: 21px;
     
@@ -768,9 +820,6 @@ footer li {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.price {
-    list-style: none;
-}
 
 .infrosrtucture {
     display: block;
@@ -791,6 +840,9 @@ fieldset {
     border-radius: 15px;
     width: 19px;
     height: 19px;
+    padding: 0;
+    margin-right: 233px;
+
 }
 
 .left-slider:before {
@@ -817,15 +869,39 @@ fieldset {
 
   
 .right-slider {
-    right: -10px;
+    right: -210px;
     top: -10px;
     position: absolute;
-    background-color: var(--basic-white);
+    background-color: #ABABAB;
     display: block;
     border-radius: 15px;
     width: 19px;
     height: 19px;
+    margin-right: 45px;
 }
+
+.right-slider:before {
+    position: absolute;
+    background-color: var(--basic-white);
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content:"";
+    border-radius: 50%;
+  }
+  
+  .right-slider:after {
+    position: absolute;
+    background-color: #ABABAB;
+    top: 7px;
+    left: 7px;
+    width: 4px;
+    height: 4px;
+    content:"";
+    border-radius: 50%;
+  }
+
 
 .range {
     display: block;
@@ -845,6 +921,7 @@ input[type="checkbox"] {
 
 }
 
+
 .check {
     color: var(--basic-white);
     background-color: inherit;
@@ -859,6 +936,7 @@ input[type="checkbox"] {
     -moz-appearance: none;
     margin-left: 20px;
 }
+
 
 .check::before {
     display: inline-block;
@@ -887,7 +965,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .main-footer {
-    margin-top: -62px;
+    margin-top: -130px;
 } 
 
 .button-catalog:active {
@@ -931,5 +1009,115 @@ input[type="checkbox"]:checked + label::before {
 
 .true-true {
     max-width: 122px;
-    margin: 47px 139px 25px 139px;
+    margin: 40px 139px 25px 139px;
+}
+
+
+.minmax {
+    display: flex;
+}
+
+.numberof {
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+}
+
+.bridge-new {
+    max-width: 170px;
+    margin: 50px 15px 25px 126px;
+}
+
+.there p {
+    max-width: 10px;
+}
+
+.description-title {
+    max-width: 118px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.ooter-text-one {
+    padding: 0;
+    margin-top: 23px;
+    margin-bottom: 9px;
+}
+
+.footer-text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 36px;
+}
+
+
+.about-item {
+    margin: 0;
+    padding-top: 60px;
+}
+
+.description1 p {
+    margin: 0;
+    padding-bottom: 67px;
+}
+
+.details-inside {
+    margin: 0;
+    padding-top: 23px;
+}
+
+.call-to-action.better-hotel {
+    margin: 0;
+    padding-top: 25px;
+}
+
+.form-row {
+    margin: 0;
+    padding: 55px 55px 29px 67px;
+}
+
+.second {
+    margin: 0;
+    padding: 29px 55px 29px 67px;
+    padding-bottom: 25px;
+}
+
+.people {
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 19px;
+}
+
+.find {
+    font-weight: bold;
+    max-width: 150px;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    padding: 29px 46px 31px 53px;
+}
+
+.image {
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.description h3{
+    margin: 0;
+    padding-top: 23px;
+}
+
+.rating img {
+    margin: 0;
+    padding-bottom: 50px;
+    padding-top: 29px;
+    padding-right: 72px;
+}
+
+.rating span {
+    padding: 0;
+    margin-right: 85px;
+    max-width: 110px;
 }

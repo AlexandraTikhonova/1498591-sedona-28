@@ -16,8 +16,8 @@
         <nav class="site-navigation">
           <ul>
             <li class="site-navigation-item"><a href="index.html">Информация</a></li>
-            <li class="site-navigation-item"><a href="">Фото и видео</a></li>
-            <li class="site-navigation-item text-right"><a href="#map">Карта штата</a></li>
+            <li class="site-navigation-item text-center"><a href="">Фото и видео</a></li>
+            <li class="site-navigation-item text-right map"><a href="#map">Карта штата</a></li>
             <li class="site-navigation-item text-right"><a href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
@@ -50,7 +50,7 @@
       </section>
       <section class="details">
         <ul class="about-it">
-          <li class="housing">
+          <li class="about-item">
             <div class="image">
               <a href="blank.html">
               <img src="img/icon-1.svg" alt="Жильё"></a>
@@ -60,23 +60,23 @@
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </div>
           </li>
-          <li class="eat">
+          <li class="about-item">
             <div class="image">
               <a href="blank.html">
               <img src="img/icon-3.svg" alt="Еда"></a>
             </div>
             <div class="description1">
-              <h3>Еда</h3>
+              <h2>Еда</h2>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </li>
-          <li class="present">
+          <li class="about-item">
             <div class="image">
               <a href="blank.html">
               <img src="img/icon-2.svg" alt="Сувениры"></a>
             </div>
             <div class="description1">
-              <h4>Сувениры</h4>
+              <h2>Сувениры</h2>
               <p>Не только китайского, но и местного производства!</p>
             </div>
           </li>
@@ -88,32 +88,32 @@
           <img src="img/image2.jpg" width="800" height="256" alt="фон">
         </div>
         <div class="text">
-          <h2>Там есть Мост дьявола</h2>
-          <p>-№2-</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <h2 class="bridge-new">Там есть<br> Мост дьявола</h2>
+          <p class="numberof">-№2-</p>
+          <p class="there">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </section>
       <section class="details1">
         <ul class="about-bridge">
           <li class="S">
             <div class="description-bridge">
-              <h2>Небольшая площадь</h2>
-              <p>— №3 —</p>
-              <p>все достопримечательности<br> находятся очень близко</p>
+              <h2 class="description-title">Небольшая площадь</h2>
+              <p class="numberof">— №3 —</p>
+              <p class="details-inside">все достопримечательности<br> находятся очень близко</p>
             </div>
           </li>
           <li class="road">
             <div class="description-bridge">
-              <h5>красивая дорога</h5>
-              <p>— №4 —</p>
-              <p>ехать в седону из лас-вегаса совсем<br> не скучно!</p>
+              <h2 class="description-title">красивая дорога</h2>
+              <p class="numberof">— №4 —</p>
+              <p class="details-inside">ехать в седону из лас-вегаса совсем<br> не скучно!</p>
             </div>
           </li>
           <li class="tourist">
             <div class="description-bridge">
-              <h6>мало туристов</h6>
-              <p> — №5 —</p>
-              <p>большинство едет в гранд каньон<br> и толпится там</p>
+              <h2 class="description-title">мало туристов</h2>
+              <p class="numberof"> — №5 —</p>
+              <p class="details-inside">большинство едет в гранд каньон<br> и толпится там</p>
             </div>
           </li>
         </ul>
@@ -122,12 +122,12 @@
       <h1 class="visually-hidden">Блок второй</h1>
       <section class="call-to-action">
         <h2 class="visually-hidden">Призыв к действию</h2>
-        <p><strong>Заинтересовались?</strong></p>
-        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
+        <p class="ineteresting"><strong>Заинтересовались?</strong></p>
+        <p class="better-hotel">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
         <div class="popup-wrapper">
           <button class="form-title">Поиск гостиницы в Седоне</button>
           <div class="popup">
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form class="date-of-invite" action="https://echo.htmlacademy.ru" method="post">
               <div class="form-row">
                 <label for="first">Дата заезда:</label>
                 <input class="one" type="text" name="search hotel" id="first" required>
@@ -137,12 +137,10 @@
                 <input class="one" type="text" name="search hotel" id="second" required>
               </div>
               <div>
-                <label>Взрослые:</label>
-                <input type="number" min="1" max="10">
-              </div>
-              <div>
-                <label>Дети:</label> <!--ширина-->
-                <input type="number" min="1" max="10"> <!--занимал все место -->
+                <label class="people">Взрослые:</label>
+                <input class="people" type="number" min="1" max="10">
+                <label class="people">Дети:</label> <!--ширина-->
+                <input class="people" type="number" min="1" max="10"> <!--занимал все место -->
               </div>
               <button type="submit" class="button">Найти</button>
             </form>
@@ -159,7 +157,7 @@
       <section  class="first-column">
         <h2 class="visually-hidden">Как с нами связаться</h2>
         <p class="footer-text-one"><a href="">#visitsedona</a></p>
-        <p class="footer-text"><a href="tel:+74956660161">tel: +7(495) 666-01-61</a></p>
+        <p class="footer-text"><a href="tel:+74956660161">тел: +7(495) 666-01-61</a></p>
       </section>
       <section  class="second-column">
         <h2 class="visually-hidden">Мы в соц.сетях</h2>
@@ -172,7 +170,7 @@
       <section class="third-column">
         <h2 class="visually-hidden">Сайт сделан с помощью</h2>
         <p>Website by</p>
-        <a href=”https://htmlacademy.ru/intensive/htmlcss”><img src="img/logo-htmlacademy.svg" width="197" height="41" alt="Website by HTML academy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="197" height="41" alt="Website by HTML academy"></a>
       </section>
       </div>
     </footer>
